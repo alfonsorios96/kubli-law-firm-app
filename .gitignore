@@ -14,3 +14,6 @@ components
 # validator
 coverage*
 .idea/
+
+public/
+.firebase/
