@@ -12,7 +12,7 @@ export class KubliLawFirmApp extends LitElement {
     */
   constructor() {
     super();
-    this.data = {
+    this.metadata = {
       description: 'Abogados especializados en materia civil, mercantil, familiar y amparo. Con más 25 años de experiencia',
       keywords: 'abogados, abogado, abogadas, abogada, derecho, civil, mercantil, familiar, amparo, demanda, pension, testamento, familia, menor, hijo, hija, hijos, hijas, intestado, testado, empresa, sociedad, sociedad mercantil, derechos, obligaciones, arrendamiento, contrato, contratos, convenio, acuerdo, experiencia, lealtad, responsabilidad, trato, personalizable',
       title: 'Kubli Abogados',
@@ -25,7 +25,7 @@ export class KubliLawFirmApp extends LitElement {
     */
   static get properties() {
     return {
-      data : {type: Object}
+      metadata : {type: Object}
     };
   };
 
@@ -35,7 +35,7 @@ export class KubliLawFirmApp extends LitElement {
 
   render() {
     return html`
-    <sherby-metadata .data=${this.data}></sherby-metadata>
+    <sherby-metadata .data=${this.metadata}></sherby-metadata>
       <div id="app-main-container">
         <kubli-law-firm-app-page></kubli-law-firm-app-page>
       </div>

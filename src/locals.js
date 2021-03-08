@@ -1,4 +1,24 @@
 export default {
+  navigationBarTitle : 'Kubli Abogados',
+  navigationBarIcons : [
+    {
+      iconPath : './assets/balance.jpg',
+      iconText : 'Nuestro despacho'
+    },
+    {
+      iconPath : './assets/book-icon.png',
+      iconText : 'Áreas de prácticas'
+    },
+    {
+      iconPath : './assets/glasses.jpg',
+      iconText : 'Temas de interés'
+    },
+    {
+      iconPath : './assets/burger-menu.png',
+      iconText : 'Contacto'
+    }
+  ],
+  headerImage : './assets/K3.jpg',
   pageContentTitle : 'NUESTRO DESPACHO.',
   contentBodyText : [
     `
@@ -32,5 +52,5 @@ export default {
         description : 'Resulta indispensable para toda empresa constituida conforme a las leyes mexicanas, que se apegue y cumpla lo establecido en la legislación vigente en cuanto a su organización y funcionamiento, observando los derechos y obligaciones que se deriven del propio objeto social de las mismas. Para ello, este despacho proporciona servicios jurídicos a las personales morales en específico para ello.'
       }
     ],
-    navBarTitle : 'Kubli Abogados'
+    imageAlt : 'Image not available'
 }

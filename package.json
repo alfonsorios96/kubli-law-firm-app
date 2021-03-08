@@ -6,7 +6,6 @@
   "module": "src/kubli-law-firm-app.js",
   "scripts": {
     "serve": "es-dev-server --app-index index.html --node-resolve --watch --open",
-    "serve-build": "rollup --config && es-dev-server --app-index build/index.html --node-resolve --watch --open",
     "build": "rollup --config"
   },
   "keywords": [],
@@ -15,7 +14,8 @@
   "dependencies": {
     "@sherby/sherby-metadata": "^3.0.2",
     "lit-element": "^2.4.0",
-    "sophos-card": "github:armandolezama/sophos-card#1.0.0"
+    "sophos-card": "github:armandolezama/sophos-card#1.0.0",
+    "sophos-icon": "github:armandolezama/sophos-icon#1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
