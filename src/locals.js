@@ -52,5 +52,20 @@ export default {
         description : 'Resulta indispensable para toda empresa constituida conforme a las leyes mexicanas, que se apegue y cumpla lo establecido en la legislación vigente en cuanto a su organización y funcionamiento, observando los derechos y obligaciones que se deriven del propio objeto social de las mismas. Para ello, este despacho proporciona servicios jurídicos a las personales morales en específico para ello.'
       }
     ],
-    imageAlt : 'Image not available'
+    imageAlt : 'Image not available',
+    footerIcons : 
+    [
+      {
+        iconPath : './assets/Gmail.png',
+        iconText : 'Envíanos un correo'
+      },
+      {
+        iconPath : './assets/Movil.png',
+        iconText : 'Llámanos'
+      },
+      {
+        iconPath : './assets/Whatsapp.png',
+        iconText : 'Envíanos un whatsapp'
+      }
+    ]
 }
