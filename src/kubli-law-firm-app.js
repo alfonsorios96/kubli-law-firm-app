@@ -2,6 +2,7 @@ import { LitElement, html } from 'lit-element';
 import styles from './kubli-law-firm-app-styles';
 import './pages/kubli-law-firm-app-page';
 import '@sherby/sherby-metadata'
+import locals from './locals';
 
 export class KubliLawFirmApp extends LitElement {
 
@@ -35,9 +36,20 @@ export class KubliLawFirmApp extends LitElement {
 
   render() {
     return html`
-    <sherby-metadata .data=${this.metadata}></sherby-metadata>
+    <sherby-metadata .data="${this.metadata}"></sherby-metadata>
       <div id="app-main-container">
-        <kubli-law-firm-app-page></kubli-law-firm-app-page>
+        <kubli-law-firm-app-page
+        .navigationBarTitle="${locals.navigationBarTitle}"
+        .navigationBarIcons="${locals.navigationBarIcons}"
+        .headerImage="${locals.headerImage}"
+        .topContentTitle="${locals.pageContentTitle}"
+        .topContentBodyText="${locals.contentBodyText}"
+        .bottomContentTitle="${locals.bottomContentTitle}"
+        .bottomContent="${locals.bottomContent}"
+        .navBarTitle="${locals.navBarTitle}"
+        .imageAlt="${locals.imageAlt}"
+        .footerIcons="${locals.footerIcons}"
+        ></kubli-law-firm-app-page>
       </div>
     `;
   }

@@ -1,7 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 import 'sophos-card/sophos-card';
 import 'sophos-icon/sophos-icon'
-import locals from '../locals';
 
 export class KubliLawFirmAppPage extends LitElement {
 
@@ -12,16 +11,16 @@ export class KubliLawFirmAppPage extends LitElement {
     */
   constructor() {
     super();
-    this.navigationBarTitle = locals.navigationBarTitle;
-    this.navigationBarIcons = locals.navigationBarIcons;
-    this.headerImage = locals.headerImage;
-    this.topContentTitle = locals.pageContentTitle;
-    this.topContentBodyText = locals.contentBodyText;
-    this.bottomContentTitle = locals.bottomContentTitle;
-    this.bottomContent = locals.bottomContent;
-    this.navBarTitle = locals.navBarTitle;
-    this.imageAlt = locals.imageAlt;
-    this.footerIcons = locals.footerIcons;
+    this.navigationBarTitle = '';
+    this.navigationBarIcons = [];
+    this.headerImage = '';
+    this.topContentTitle = '';
+    this.topContentBodyText = [];
+    this.bottomContentTitle = '';
+    this.bottomContent = [];
+    this.navBarTitle = '';
+    this.imageAlt = '';
+    this.footerIcons = [];
   };
 
   /**
@@ -29,11 +28,16 @@ export class KubliLawFirmAppPage extends LitElement {
     */
   static get properties() {
     return {
-      topContentTitle : { type: String},
-      topContentBodyText : {type: Array},
-      bottomContentTitle : {type: String},
-      bottomContent: {type : Array},
-      navBarTitle : { type: String}
+      navigationBarTitle : {type : String},
+      navigationBarIcons : {type : Array},
+      headerImage : {type : String},
+      topContentTitle : {type : String},
+      topContentBodyText : {type : Array},
+      bottomContentTitle : {type : String},
+      bottomContent : {type : Array},
+      navBarTitle : {type : String},
+      imageAlt : {type : String},
+      footerIcons : {type : Array}
     };
   };
 
@@ -174,7 +178,6 @@ export class KubliLawFirmAppPage extends LitElement {
     const iconTextWords = e.target.iconText.split(' ');
     const sectionName = iconTextWords.join('-');
     const elementToFocus = this.shadowRoot.querySelector(`[section-name="${sectionName}"]`);
-    console.log(elementToFocus);
     elementToFocus.scrollIntoView({
       behavior: "smooth",
       block: "start",

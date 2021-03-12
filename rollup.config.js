@@ -42,7 +42,7 @@ const copyConfig = {
   targets: [
     { src: 'src/index-universal.html', dest: 'public/', rename: 'index.html' },
     { src: 'node_modules/@webcomponents', dest: 'public/bundle-modules' },
-    { src: 'src/assets', dest: 'public'},
+    { src: 'assets', dest: 'public'},
     { src: 'node_modules/systemjs/dist/s.min.js', dest: 'public/bundle-modules/systemjs/dist/' },
   ],
 };
